@@ -1,0 +1,22 @@
+
+ constructor(props){
+        super(props)
+        this.state = {
+            name: ''
+        }
+    }
+
+handleChange = (e) => {
+    this.setState({
+        [e.target.name]: e.target.value
+    })
+}
+
+
+<input 
+    type="text" 
+    id="name" 
+    name="name" 
+    value={this.state.name} 
+    onChange={this.handleChange} 
+/> 
